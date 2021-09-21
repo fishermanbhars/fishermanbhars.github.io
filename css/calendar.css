@@ -1,0 +1,153 @@
+/* General */
+html {
+  background: url(extras/bg.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.text {
+  padding-right: 5%;
+  margin-top: 250px;
+  text-align: center;
+  color: #7952b3;
+  font-size: 300%;
+  font-family: "Ubuntu", sans-serif;
+}
+/* Container */
+.cal-wrap {
+  max-width: 100%;
+  padding-right: 5%;
+  margin-top: 150px;
+}
+
+/* Selector */
+.cal-date {
+  display: flex;
+}
+
+#cal-mth, #cal-yr, #cal-set {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border: 0;
+  color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#cal-mth, #cal-yr {
+  background: #343a40;
+}
+
+#cal-set {
+   background: #7952b3;
+ }
+
+#cal-mth {
+  border-top-left-radius: 8px;
+}
+
+#cal-set {
+  border-top-right-radius: 8px;
+}
+
+/* Calendar */
+#calendar {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#calendar tr.head td {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #0A1931;
+  padding: 15px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#calendar tr:first-child.head td:nth-child(7) {
+  border-top-right-radius: 8px;
+}
+
+#calendar tr.day td {
+  background: #E1E8Ebaa;
+  border: 1px solid #ddd;
+  width: 14.28%;
+  padding: 15px 5px;
+  vertical-align: top;
+}
+
+#calendar tr.day td:hover {
+  background: #E1E8Eb;
+  cursor: pointer;
+}
+
+#calendar tr td.blank {
+  background: #E1E8Eb00
+}
+
+#calendar .dd {
+  font-size: 1.2em;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#calendar .evt {
+  margin-top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  overflow: hidden;
+  color: #7952b3;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Event Form */
+#cal-event form {
+  padding: 15px;
+  margin-top: 20px;
+  background: #E1E8Eb;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+#cal-event h1 {
+  color: #0A1931;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#evt-date {
+  color: #black;
+  margin: 10px 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#cal-event textarea {
+  display: block;
+  box-sizing: padding-box;
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  resize: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#cal-event input[type=button], #cal-event input[type=submit] {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.2em;
+  border: 0;
+  background: #7952b3;
+  color: #fff;
+  border-radius: 8px;
+  font-family: "Roboto Condensed", sans-serif;
+}
